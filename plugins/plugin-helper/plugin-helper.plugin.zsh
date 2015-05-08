@@ -62,7 +62,8 @@ function print_aliases()
   if [[ -n $1 ]]; then
     for plugin in $(echo "$@"); do
       print $orn"\n  --$plugin--\n"$rst
-      grep -r '^alias' $ZSH/plugins/$plugin/ --include \*.zsh \
+      sed -e 's/^[ \t]*//' $ZSH/plugins/$plugin/*.zsh \
+        | grep '^alias' \
         | awk '{$1=""; print}' \
         | sed -e "s/^ /$orn/g" -e "s/=/$rst\ =\ /g" \
         | sort
@@ -112,4 +113,3 @@ function disable_plugin()
   fi
 }
 alias phdp='disable_plugin'
-
