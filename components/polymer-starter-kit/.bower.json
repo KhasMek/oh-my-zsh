@@ -1,0 +1,26 @@
+{
+  "name": "polymer-starter-kit",
+  "private": true,
+  "dependencies": {
+    "iron-elements": "PolymerElements/iron-elements#1.0.0",
+    "paper-elements": "PolymerElements/paper-elements#1.0.1",
+    "platinum-elements": "PolymerElements/platinum-elements#1.0.1",
+    "neon-elements": "PolymerElements/neon-elements#1.0.0",
+    "page": "visionmedia/page.js#~1.6.3"
+  },
+  "devDependencies": {
+    "web-component-tester": "*",
+    "test-fixture": "PolymerElements/test-fixture#^1.0.0"
+  },
+  "homepage": "https://github.com/KhasMek/oh-my-zsh",
+  "_release": "b44c6561de",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "b44c6561dea850ed0b3ce296f271056e2a60806a"
+  },
+  "_source": "git://github.com/KhasMek/oh-my-zsh.git",
+  "_target": "master",
+  "_originalSource": "KhasMek/oh-my-zsh",
+  "_direct": true
+}
